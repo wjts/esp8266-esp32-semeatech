@@ -1,5 +1,3 @@
-from machine import I2C
-
 SENSOR_CO = 0x01
 SENSOR_O3 = 0x04
 SENSOR_SO2 = 0x05
