@@ -1,0 +1,21 @@
+{
+    "python.linting.enabled": true,
+    "python.autoComplete.extraPaths": [
+        ".micropy/micropython/frozen",
+        ".micropy/esp32-micropython-1.11.0/frozen",
+        ".micropy/esp32-micropython-1.11.0/stubs"
+    ],
+    "python.autoComplete.typeshedPaths": [
+        ".micropy/micropython/frozen",
+        ".micropy/esp32-micropython-1.11.0/frozen",
+        ".micropy/esp32-micropython-1.11.0/stubs"
+    ],
+    "python.analysis.typeshedPaths": [
+        ".micropy/micropython/frozen",
+        ".micropy/esp32-micropython-1.11.0/frozen",
+        ".micropy/esp32-micropython-1.11.0/stubs"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": "/usr/bin/python",
+    "python.linting.pep8Enabled": true
+}

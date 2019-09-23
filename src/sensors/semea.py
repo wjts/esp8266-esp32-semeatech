@@ -1,18 +1,17 @@
 from machine import I2C
 
-I2CADDR = 0x0B
-
 SENSOR_CO = 0x01
 SENSOR_O3 = 0x04
 SENSOR_SO2 = 0x05
 SENSOR_NO2 = 0X0B
 
+
 class Semea():
-    def __init__(self, address=I2CADDR, i2c=None, sensor=None):
+    def __init__(self, i2c=None, sensor=None):
         if sensor not in [SENSOR_CO, SENSOR_O3, SENSOR_SO2, SENSOR_NO2]:
             raise ValueError('Unexpected sensor type {sensor}. Set sensor type'
-            ' to one of SENSOR_CO, SENSOR_O3, SENSOR_SO2 or SENSOR_NO2'
-            ''.format(sensor=sensor))
+                             ' to one of SENSOR_CO, SENSOR_O3, SENSOR_SO2 or'
+                             ' SENSOR_NO2'.format(sensor=sensor))
 
         self._sensor = sensor
 
